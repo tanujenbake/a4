@@ -1,0 +1,59 @@
+<!-- <app-navbar></app-navbar> -->
+<div class="wrapper">
+<div class="container-fluid">
+	<h1 style="padding-top: 20px; margin:0px;"><a href="#"><span class="glyphicn glyphicon glyphicon-home"><i class="fa fa-home"></i></span></a></h1>
+</div>
+<div class="container-fluid con">
+    <div class="centered-div">
+    	<h1 class="heading">Canvab</h1>
+    	<div class="form">
+          <form [formGroup]="loginform" novalidate (ngSubmit)="onSubmitLoginDetails(loginform.value)">
+                      <div class="container">
+                        <!-- <label for="email"><b>Email</b></label> -->
+                        <!-- <input type="email" placeholder="Enter Email" name="Email" required> -->
+                        <div class="form-group">
+                        <input type="text" placeholder="Email" formControlName="email" required>
+                    	</div>
+                        <div *ngFor="let validation of login_validation_messages.email">
+                        <div class="error-message" *ngIf="loginform.get('email').hasError(validation.type) && (loginform.get('email').dirty || loginform.get('email').touched)" style="color: crimson;">{{validation.message}}</div>
+                        </div>
+
+                      <!--   <label for="psw"><b>Password</b></label> -->
+                        <!-- <input type="password" placeholder="Enter Password" name="psw" required> -->
+                        <div class="form-group">
+                        <input type="text" placeholder="Password" formControlName="password" required>
+                    	</div>
+                        <div *ngFor="let validation of login_validation_messages.password">
+                        <div class="error-message" *ngIf="loginform.get('password').hasError(validation.type) && (loginform.get('password').dirty || loginform.get('password').touched)" style="color: crimson;">{{validation.message}}</div>
+                        </div>
+
+                        <div class="form-group">
+                        <label>
+                            <input type="checkbox" checked="checked" name="remember"> Remember me
+                          </label>
+                      	</div>
+                        </div>
+                        <!-- <button type="submit">Login</button> -->
+                        <!-- <button color="primary" button type="submit" [disabled]="!loginform.valid" *ngIf="loginform.valid">
+                            <a href="#" style="text-decoration: none; color: azure; font-size: 20px;">Submit</a>
+                        </button> -->
+                        <div class="form-group">
+                         <button class="btn" button type="submit" [disabled]="!loginform.valid" *ngIf="loginform.valid">
+                            <a href="#" style="text-decoration: none; color: white; font-size: 20px;">Get In</a>
+                        </button>
+                    	</div>
+                      <!-- <div class="container" style="background-color:#f1f1f1">
+                        <button type="button" class="cancelbtn">Cancel</button>
+                        <span class="psw">Forgot <a href="#">password?</a></span>
+                      </div> -->
+          </form>
+        </div>
+        <br>
+        <br>
+        <br>
+        <p class="tstyle"><a href="#" class="hrf">Forgot Your Password</a></p>
+ 		<p class="tstyle"><label class="lstyle">Don't have Account ?</label>
+ 		<a href="#" class="hrf"><b>Create an Account</b></a></p>
+    </div>
+</div>
+</div>

@@ -1,0 +1,38 @@
+.r1{
+	background-color: #6362bb;
+    color: white;
+    padding-top: 100px;
+    text-align: center;
+    height: 850px;
+    width: 100%;
+    line-height: 20px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.r1-btn {
+	margin: 10px 0px;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    border-radius: 10px;
+    background-color: #1eb995;
+}
+
+.r1-o {
+	padding-top: 20px;
+    font-size: 18px;
+}
+
+.r1-img{
+    height: auto;
+    width: 100%;
+    padding-top: 50px;
+    top: 80px;
+}
+
+.r2{
+    top: 300px;
+    position: relative;
+    line-height: 5px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
