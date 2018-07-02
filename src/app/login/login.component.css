@@ -66,7 +66,7 @@
 }
 
 .btn {
-    width: 50%;
+   /* width: 50%;*/
     padding: 10px 20px;
     color: white;
     border-radius: 7px;
@@ -79,4 +79,20 @@
 }
 a.hrf:hover{
     color: blue;
+}
+
+.hstyle{
+    padding-top: 20px; 
+    margin:0px;
+}
+
+.fs{
+    text-align: center;
+}
+
+
+.banchor{
+    text-decoration: none; 
+    color: white; 
+    font-size: 20px;
 }

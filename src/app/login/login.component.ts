@@ -36,10 +36,13 @@ export class LoginComponent implements OnInit {
       ])),
       password: new FormControl('', Validators.compose([
         Validators.required,
-        Validators.minLength(5),
-        // Validators.pattern('^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$')
+        Validators.minLength(8),
+        Validators.pattern('(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$'
       ]))
     })
   }
 
+    onSubmitLoginDetails(value) {
+    console.log(value);
+  }
 }
