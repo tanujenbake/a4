@@ -17,8 +17,8 @@ export class LoginComponent implements OnInit {
     ],
     'password': [
       { type: 'required', message: 'Password is required' },
-      { type: 'minlength', message: 'Password must be at least 5 characters long' },
-      { type: 'pattern', message: 'Your password must contain at least one uppercase, one lowercase, and one number' }
+      { type: 'minlength', message: 'Password must be at least 8 characters long' },
+      { type: 'pattern', message: 'should have 1 uppercase,lowercase,and one number'}
     ]
   }
 
@@ -37,12 +37,13 @@ export class LoginComponent implements OnInit {
       password: new FormControl('', Validators.compose([
         Validators.required,
         Validators.minLength(8),
-        Validators.pattern('(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$'
+        Validators.pattern('(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$')
       ]))
     })
   }
 
-    onSubmitLoginDetails(value) {
+  onSubmitLoginDetails(value) {
     console.log(value);
   }
+
 }
