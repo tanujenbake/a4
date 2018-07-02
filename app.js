@@ -1,6 +1,6 @@
 //Install express server
 const express = require('express');
-const app = require('app');
+const app = express();
 const path = require('path');
 
 
