@@ -42,8 +42,8 @@ export class LoginComponent implements OnInit {
     })
   }
 
-  onSubmitLoginDetails(value) {
-    console.log(value);
+  onSubmitLoginDetails() {
+    console.log(this.loginform.value);
   }
 
 }

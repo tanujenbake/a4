@@ -1,0 +1,41 @@
+<div class="wrapper">
+<div class="container-fluid">
+	<h1 class="hstyle"><a href="#"><span class="glyphicn glyphicon glyphicon-home"><i class="fa fa-home"></i></span></a></h1>
+</div>
+<div class="container-fluid con">
+    <div class="centered-div">
+    	<h1 class="heading">Canvab</h1>
+    	<div class="form">
+                <form [formGroup]= "registerform" (ngSubmit)="onSubmitDetails(registerform.value)">
+                    <div class="form-group">
+                        <input type="text" placeholder="Name" formControlName="name" required>
+                    </div>
+                        <div *ngFor="let validation of register_validation_messages.name">
+                            <div class="error-message" *ngIf="registerform.get('name').hasError(validation.type) && (registerform.get('name').dirty || registerform.get('name').touched)" style="color: crimson;">{{validation.message}}
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Email" formControlName="email" required>
+                        </div>
+                        <div *ngFor="let validation of register_validation_messages.email">
+                        <div class="error-message" *ngIf="registerform.get('email').hasError(validation.type) && (registerform.get('email').dirty || registerform.get('email').touched)" style="color: crimson;">{{validation.message}}</div>
+                        </div>
+                    <div class="form-group">
+                        <input type="password" placeholder="password" formControlName="password" required>
+                    </div>
+                    <div *ngFor="let validation of register_validation_messages.password">
+                        <div class="error-message" *ngIf="registerform.get('password').hasError(validation.type) && (registerform.get('password').dirty || registerform.get('password').touched)" style="color: crimson;">{{validation.message}}</div>
+                    </div>
+                    <div class="form-group fs">
+                    <button class="btn" button type="submit" [disabled]="!registerform.valid" *ngIf="registerform.valid">
+                            <a href=" " class="banchor">Let's Get Started</a>
+                    </button>
+                    </div>
+
+                
+        
+        </form>
+    </div>
+</div>
+</div>
+</div>

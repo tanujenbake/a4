@@ -7,7 +7,7 @@
     <div class="centered-div">
     	<h1 class="heading">Canvab</h1>
     	<div class="form">
-          <form [formGroup]="loginform" novalidate (ngSubmit)="onSubmitLoginDetails(loginform.value)">
+          <form [formGroup]="loginform" (ngSubmit)="onSubmitLoginDetails(loginform.value)">
                       <div class="container">
                         <!-- <label for="email"><b>Email</b></label> -->
                         <!-- <input type="email" placeholder="Enter Email" name="Email" required> -->
@@ -39,7 +39,7 @@
                         </button> -->
                         <div class="form-group fs">
                          <button class="btn" button type="submit" [disabled]="!loginform.valid" *ngIf="loginform.valid">
-                            <a href="#" class="banchor">Get In</a>
+                            <a href="" class="banchor">Get In</a>
                         </button>
                     	</div>
                       <!-- <div class="container" style="background-color:#f1f1f1">

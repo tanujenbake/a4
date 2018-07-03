@@ -1,13 +1,13 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["styles"],{
 
-/***/ "./node_modules/raw-loader/index.js!./node_modules/postcss-loader/lib/index.js??embedded!./src/styles.css":
-/*!**********************************************************************************************!*\
-  !*** ./node_modules/raw-loader!./node_modules/postcss-loader/lib??embedded!./src/styles.css ***!
-  \**********************************************************************************************/
+/***/ "./node_modules/raw-loader/index.js!./node_modules/postcss-loader/lib/index.js??embedded!./src/assets/css/common.css":
+/*!*********************************************************************************************************!*\
+  !*** ./node_modules/raw-loader!./node_modules/postcss-loader/lib??embedded!./src/assets/css/common.css ***!
+  \*********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/* You can add global styles to this file, and also import other style files */\n"
+module.exports = ".con{\n    /*background: linear-gradient(blue, slateblue);*/\n    width: 100%;\n    height: 100vh;\n    display: flex;\n    flex-direction: row;\n    flex-wrap: wrap;\n    justify-content: center;\n    align-items: center;\n}\n\n.centered-div{\n    width: auto;\n    height: auto;\n    margin: 10px;\n    padding:5px;\n   /* background-color: #FBFCFC;\n    color:white;\n    border-radius: 15px;*/\n}\n\n.glyphicn{\n    position: relative;\n    top: 1px;\n    display: inline-block;\n    font-family: 'Glyphicons Halflings';\n    color: white;\n    font-style: normal;\n    font-weight: 400;\n    line-height: 1;\n}\n\n.form{\n    padding-right: 20px;\n    padding-left: 30px;\n    padding-bottom: 40px;\n    padding-top: 50px;\n    background-color: white;\n    border-radius: 7px;\n}\n\n.wrapper {\n    background: linear-gradient(blue, slateblue);\n}\n\n/*.inner {\n    background-color: #FBFCFC;\n    color:white;\n    border-radius: 15px;\n}*/\n\n.heading {\n    text-align: center;\n    color: white;\n    font-family: 'Abril Fatface'; \n    margin-top: 20px; \n    margin-bottom: 10px;\n}\n\n.tstyle {\n        text-align: center;\n        color: white;\n        margin:0px;\n}\n\n.lstyle {\n    display: inline-block;\n    max-width: 100%;\n    padding-bottom: 5px;\n    font-weight: 700;\n}\n\n.btn {\n   /* width: 50%;*/\n    padding: 10px 20px;\n    color: white;\n    border-radius: 7px;\n    background-color: #1eb995;\n}\n\n.hrf{\n    text-decoration: none;\n    color: white;\n}\n\na.hrf:hover{\n    color: blue;\n}\n\n.hstyle{\n    padding-top: 20px; \n    margin:0px;\n}\n\n.fs{\n    text-align: center;\n}\n\n.banchor{\n    text-decoration: none; \n    color: white; \n    font-size: 20px;\n}"
 
 /***/ }),
 
@@ -502,15 +502,15 @@ module.exports = function (css) {
 
 /***/ }),
 
-/***/ "./src/styles.css":
-/*!************************!*\
-  !*** ./src/styles.css ***!
-  \************************/
+/***/ "./src/assets/css/common.css":
+/*!***********************************!*\
+  !*** ./src/assets/css/common.css ***!
+  \***********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(/*! !../node_modules/raw-loader!../node_modules/postcss-loader/lib??embedded!./styles.css */ "./node_modules/raw-loader/index.js!./node_modules/postcss-loader/lib/index.js??embedded!./src/styles.css");
+var content = __webpack_require__(/*! !../../../node_modules/raw-loader!../../../node_modules/postcss-loader/lib??embedded!./common.css */ "./node_modules/raw-loader/index.js!./node_modules/postcss-loader/lib/index.js??embedded!./src/assets/css/common.css");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -524,7 +524,7 @@ var options = {"hmr":true}
 options.transform = transform
 options.insertInto = undefined;
 
-var update = __webpack_require__(/*! ../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
 
 if(content.locals) module.exports = content.locals;
 
@@ -533,13 +533,13 @@ if(false) {}
 /***/ }),
 
 /***/ 2:
-/*!******************************!*\
-  !*** multi ./src/styles.css ***!
-  \******************************/
+/*!*****************************************!*\
+  !*** multi ./src/assets/css/common.css ***!
+  \*****************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /home/postgres/task/a4/src/styles.css */"./src/styles.css");
+module.exports = __webpack_require__(/*! /home/postgres/task/a4/src/assets/css/common.css */"./src/assets/css/common.css");
 
 
 /***/ })

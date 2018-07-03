@@ -37,6 +37,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 /* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../home/home.component */ "./src/app/home/home.component.ts");
 /* harmony import */ var _login_login_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../login/login.component */ "./src/app/login/login.component.ts");
+/* harmony import */ var _register_register_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../register/register.component */ "./src/app/register/register.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -47,10 +48,12 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
+
 var routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' },
     { path: 'home', component: _home_home_component__WEBPACK_IMPORTED_MODULE_2__["HomeComponent"] },
     { path: 'login', component: _login_login_component__WEBPACK_IMPORTED_MODULE_3__["LoginComponent"] },
+    { path: 'register', component: _register_register_component__WEBPACK_IMPORTED_MODULE_4__["RegisterComponent"] },
     { path: '**', component: _home_home_component__WEBPACK_IMPORTED_MODULE_2__["HomeComponent"] }
 ];
 var AppRoutingModule = /** @class */ (function () {
@@ -145,12 +148,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
 /* harmony import */ var _navbar_navbar_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./navbar/navbar.component */ "./src/app/navbar/navbar.component.ts");
 /* harmony import */ var _login_login_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./login/login.component */ "./src/app/login/login.component.ts");
+/* harmony import */ var _register_register_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./register/register.component */ "./src/app/register/register.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -168,7 +173,8 @@ var AppModule = /** @class */ (function () {
                 _app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"],
                 _home_home_component__WEBPACK_IMPORTED_MODULE_5__["HomeComponent"],
                 _navbar_navbar_component__WEBPACK_IMPORTED_MODULE_6__["NavbarComponent"],
-                _login_login_component__WEBPACK_IMPORTED_MODULE_7__["LoginComponent"]
+                _login_login_component__WEBPACK_IMPORTED_MODULE_7__["LoginComponent"],
+                _register_register_component__WEBPACK_IMPORTED_MODULE_8__["RegisterComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
@@ -257,7 +263,7 @@ var HomeComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".con{\n    /*background: linear-gradient(blue, slateblue);*/\n    width: 100%;\n    height: 100vh;\n    display: flex;\n    flex-direction: row;\n    flex-wrap: wrap;\n    justify-content: center;\n    align-items: center;\n}\n\n.centered-div{\n    width: auto;\n    height: auto;\n    margin: 10px;\n    padding:5px;\n   /* background-color: #FBFCFC;\n    color:white;\n    border-radius: 15px;*/\n}\n\n.glyphicn{\n    position: relative;\n    top: 1px;\n    display: inline-block;\n    font-family: 'Glyphicons Halflings';\n    color: white;\n    font-style: normal;\n    font-weight: 400;\n    line-height: 1;\n}\n\n.form{\n    padding-right: 20px;\n    padding-left: 30px;\n    padding-bottom: 40px;\n    padding-top: 50px;\n    background-color: white;\n    border-radius: 7px;\n}\n\n.wrapper {\n    background: linear-gradient(blue, slateblue);\n}\n\n/*.inner {\n    background-color: #FBFCFC;\n    color:white;\n    border-radius: 15px;\n}*/\n\n.heading {\n    text-align: center;\n    color: white;\n    font-family: 'Abril Fatface'; \n    margin-top: 20px; \n    margin-bottom: 10px;\n}\n\n.tstyle {\n        text-align: center;\n        color: white;\n        margin:0px;\n}\n\n.lstyle {\n    display: inline-block;\n    max-width: 100%;\n    padding-bottom: 5px;\n    font-weight: 700;\n}\n\n.btn {\n   /* width: 50%;*/\n    padding: 10px 20px;\n    color: white;\n    border-radius: 7px;\n    background-color: #1eb995;\n}\n\n.hrf{\n    text-decoration: none;\n    color: white;\n}\n\na.hrf:hover{\n    color: blue;\n}\n\n.hstyle{\n    padding-top: 20px; \n    margin:0px;\n}\n\n.fs{\n    text-align: center;\n}\n\n.banchor{\n    text-decoration: none; \n    color: white; \n    font-size: 20px;\n}"
+module.exports = ""
 
 /***/ }),
 
@@ -268,7 +274,7 @@ module.exports = ".con{\n    /*background: linear-gradient(blue, slateblue);*/\n
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!-- <app-navbar></app-navbar> -->\n<div class=\"wrapper\">\n<div class=\"container-fluid\">\n\t<h1 class=\"hstyle\"><a href=\"#\"><span class=\"glyphicn glyphicon glyphicon-home\"><i class=\"fa fa-home\"></i></span></a></h1>\n</div>\n<div class=\"container-fluid con\">\n    <div class=\"centered-div\">\n    \t<h1 class=\"heading\">Canvab</h1>\n    \t<div class=\"form\">\n          <form [formGroup]=\"loginform\" novalidate (ngSubmit)=\"onSubmitLoginDetails(loginform.value)\">\n                      <div class=\"container\">\n                        <!-- <label for=\"email\"><b>Email</b></label> -->\n                        <!-- <input type=\"email\" placeholder=\"Enter Email\" name=\"Email\" required> -->\n                        <div class=\"form-group\">\n                        <input type=\"text\" placeholder=\"Email\" formControlName=\"email\" required>\n                    \t</div>\n                        <div *ngFor=\"let validation of login_validation_messages.email\">\n                        <div class=\"error-message\" *ngIf=\"loginform.get('email').hasError(validation.type) && (loginform.get('email').dirty || loginform.get('email').touched)\" style=\"color: crimson;\">{{validation.message}}</div>\n                        </div>\n\n                      <!--   <label for=\"psw\"><b>Password</b></label> -->\n                        <!-- <input type=\"password\" placeholder=\"Enter Password\" name=\"psw\" required> -->\n                        <div class=\"form-group\">\n                        <input type=\"password\" placeholder=\"Password\" formControlName=\"password\" required>\n                    \t</div>\n                        <div *ngFor=\"let validation of login_validation_messages.password\">\n                        <div class=\"error-message\" *ngIf=\"loginform.get('password').hasError(validation.type) && (loginform.get('password').dirty || loginform.get('password').touched)\" style=\"color: crimson;\">{{validation.message}}</div>\n                        </div>\n\n                        <div class=\"form-group\">\n                        <label>\n                            <input type=\"checkbox\" checked=\"checked\" name=\"remember\"> Remember me\n                          </label>\n                      \t</div>\n                        </div>\n                        <!-- <button type=\"submit\">Login</button> -->\n                        <!-- <button color=\"primary\" button type=\"submit\" [disabled]=\"!loginform.valid\" *ngIf=\"loginform.valid\">\n                            <a href=\"#\" style=\"text-decoration: none; color: azure; font-size: 20px;\">Submit</a>\n                        </button> -->\n                        <div class=\"form-group fs\">\n                         <button class=\"btn\" button type=\"submit\" [disabled]=\"!loginform.valid\" *ngIf=\"loginform.valid\">\n                            <a href=\"#\" class=\"banchor\">Get In</a>\n                        </button>\n                    \t</div>\n                      <!-- <div class=\"container\" style=\"background-color:#f1f1f1\">\n                        <button type=\"button\" class=\"cancelbtn\">Cancel</button>\n                        <span class=\"psw\">Forgot <a href=\"#\">password?</a></span>\n                      </div> -->\n          </form>\n        </div>\n        <br>\n        <br>\n        <br>\n        <p class=\"tstyle\"><a href=\"#\" class=\"hrf\">Forgot Your Password</a></p>\n \t\t<p class=\"tstyle\"><label class=\"lstyle\">Don't have Account ?</label>\n \t\t<a href=\"#\" class=\"hrf\"><b>Create an Account</b></a></p>\n    </div>\n</div>\n</div>\n"
+module.exports = "<!-- <app-navbar></app-navbar> -->\n<div class=\"wrapper\">\n<div class=\"container-fluid\">\n\t<h1 class=\"hstyle\"><a href=\"#\"><span class=\"glyphicn glyphicon glyphicon-home\"><i class=\"fa fa-home\"></i></span></a></h1>\n</div>\n<div class=\"container-fluid con\">\n    <div class=\"centered-div\">\n    \t<h1 class=\"heading\">Canvab</h1>\n    \t<div class=\"form\">\n          <form [formGroup]=\"loginform\" (ngSubmit)=\"onSubmitLoginDetails(loginform.value)\">\n                      <div class=\"container\">\n                        <!-- <label for=\"email\"><b>Email</b></label> -->\n                        <!-- <input type=\"email\" placeholder=\"Enter Email\" name=\"Email\" required> -->\n                        <div class=\"form-group\">\n                        <input type=\"text\" placeholder=\"Email\" formControlName=\"email\" required>\n                    \t</div>\n                        <div *ngFor=\"let validation of login_validation_messages.email\">\n                        <div class=\"error-message\" *ngIf=\"loginform.get('email').hasError(validation.type) && (loginform.get('email').dirty || loginform.get('email').touched)\" style=\"color: crimson;\">{{validation.message}}</div>\n                        </div>\n\n                      <!--   <label for=\"psw\"><b>Password</b></label> -->\n                        <!-- <input type=\"password\" placeholder=\"Enter Password\" name=\"psw\" required> -->\n                        <div class=\"form-group\">\n                        <input type=\"password\" placeholder=\"Password\" formControlName=\"password\" required>\n                    \t</div>\n                        <div *ngFor=\"let validation of login_validation_messages.password\">\n                        <div class=\"error-message\" *ngIf=\"loginform.get('password').hasError(validation.type) && (loginform.get('password').dirty || loginform.get('password').touched)\" style=\"color: crimson;\">{{validation.message}}</div>\n                        </div>\n\n                        <div class=\"form-group\">\n                        <label>\n                            <input type=\"checkbox\" checked=\"checked\" name=\"remember\"> Remember me\n                          </label>\n                      \t</div>\n                        </div>\n                        <!-- <button type=\"submit\">Login</button> -->\n                        <!-- <button color=\"primary\" button type=\"submit\" [disabled]=\"!loginform.valid\" *ngIf=\"loginform.valid\">\n                            <a href=\"#\" style=\"text-decoration: none; color: azure; font-size: 20px;\">Submit</a>\n                        </button> -->\n                        <div class=\"form-group fs\">\n                         <button class=\"btn\" button type=\"submit\" [disabled]=\"!loginform.valid\" *ngIf=\"loginform.valid\">\n                            <a href=\"\" class=\"banchor\">Get In</a>\n                        </button>\n                    \t</div>\n                      <!-- <div class=\"container\" style=\"background-color:#f1f1f1\">\n                        <button type=\"button\" class=\"cancelbtn\">Cancel</button>\n                        <span class=\"psw\">Forgot <a href=\"#\">password?</a></span>\n                      </div> -->\n          </form>\n        </div>\n        <br>\n        <br>\n        <br>\n        <p class=\"tstyle\"><a href=\"#\" class=\"hrf\">Forgot Your Password</a></p>\n \t\t<p class=\"tstyle\"><label class=\"lstyle\">Don't have Account ?</label>\n \t\t<a href=\"#\" class=\"hrf\"><b>Create an Account</b></a></p>\n    </div>\n</div>\n</div>\n"
 
 /***/ }),
 
@@ -326,8 +332,8 @@ var LoginComponent = /** @class */ (function () {
             ]))
         });
     };
-    LoginComponent.prototype.onSubmitLoginDetails = function (value) {
-        console.log(value);
+    LoginComponent.prototype.onSubmitLoginDetails = function () {
+        console.log(this.loginform.value);
     };
     LoginComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -401,6 +407,106 @@ var NavbarComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [])
     ], NavbarComponent);
     return NavbarComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/register/register.component.css":
+/*!*************************************************!*\
+  !*** ./src/app/register/register.component.css ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/register/register.component.html":
+/*!**************************************************!*\
+  !*** ./src/app/register/register.component.html ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"wrapper\">\n<div class=\"container-fluid\">\n\t<h1 class=\"hstyle\"><a href=\"#\"><span class=\"glyphicn glyphicon glyphicon-home\"><i class=\"fa fa-home\"></i></span></a></h1>\n</div>\n<div class=\"container-fluid con\">\n    <div class=\"centered-div\">\n    \t<h1 class=\"heading\">Canvab</h1>\n    \t<div class=\"form\">\n                <form [formGroup]= \"registerform\" (ngSubmit)=\"onSubmitDetails(registerform.value)\">\n                    <div class=\"form-group\">\n                        <input type=\"text\" placeholder=\"Name\" formControlName=\"name\" required>\n                    </div>\n                        <div *ngFor=\"let validation of register_validation_messages.name\">\n                            <div class=\"error-message\" *ngIf=\"registerform.get('name').hasError(validation.type) && (registerform.get('name').dirty || registerform.get('name').touched)\" style=\"color: crimson;\">{{validation.message}}\n                        </div>\n                    </div>\n                    <div class=\"form-group\">\n                        <input type=\"text\" placeholder=\"Email\" formControlName=\"email\" required>\n                        </div>\n                        <div *ngFor=\"let validation of register_validation_messages.email\">\n                        <div class=\"error-message\" *ngIf=\"registerform.get('email').hasError(validation.type) && (registerform.get('email').dirty || registerform.get('email').touched)\" style=\"color: crimson;\">{{validation.message}}</div>\n                        </div>\n                    <div class=\"form-group\">\n                        <input type=\"password\" placeholder=\"password\" formControlName=\"password\" required>\n                    </div>\n                    <div *ngFor=\"let validation of register_validation_messages.password\">\n                        <div class=\"error-message\" *ngIf=\"registerform.get('password').hasError(validation.type) && (registerform.get('password').dirty || registerform.get('password').touched)\" style=\"color: crimson;\">{{validation.message}}</div>\n                    </div>\n                    <div class=\"form-group fs\">\n                    <button class=\"btn\" button type=\"submit\" [disabled]=\"!registerform.valid\" *ngIf=\"registerform.valid\">\n                            <a href=\" \" class=\"banchor\">Let's Get Started</a>\n                    </button>\n                    </div>\n\n                \n        \n        </form>\n    </div>\n</div>\n</div>\n</div>\n"
+
+/***/ }),
+
+/***/ "./src/app/register/register.component.ts":
+/*!************************************************!*\
+  !*** ./src/app/register/register.component.ts ***!
+  \************************************************/
+/*! exports provided: RegisterComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RegisterComponent", function() { return RegisterComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var RegisterComponent = /** @class */ (function () {
+    function RegisterComponent(fb) {
+        this.fb = fb;
+        this.register_validation_messages = {
+            'name': [
+                { type: 'required', message: 'name is required' }
+            ],
+            'email': [
+                { type: 'required', message: 'Email is required' },
+                { type: 'pattern', message: 'Enter the valid Email Address' }
+            ],
+            'password': [
+                { type: 'required', message: 'password is required' },
+                { type: 'pattern', message: 'atleast 1 upperlower, 1 lowercase and 1 number' },
+                { type: 'minlength', message: 'atleast 8 character long' }
+            ]
+        };
+    }
+    RegisterComponent.prototype.ngOnInit = function () {
+        this.signupForm();
+    };
+    RegisterComponent.prototype.signupForm = function () {
+        this.registerform = this.fb.group({
+            name: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]('', _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].compose([
+                _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required
+            ])),
+            email: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]('', _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].compose([
+                _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required,
+                _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].pattern('^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$')
+            ])),
+            password: new _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControl"]('', _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].compose([
+                _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required,
+                _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].minLength(8),
+                _angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].pattern('(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$')
+            ]))
+        });
+    };
+    RegisterComponent.prototype.onSubmitDetails = function () {
+        console.log(this.registerform.value);
+    };
+    RegisterComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-register',
+            template: __webpack_require__(/*! ./register.component.html */ "./src/app/register/register.component.html"),
+            styles: [__webpack_require__(/*! ./register.component.css */ "./src/app/register/register.component.css")]
+        }),
+        __metadata("design:paramtypes", [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormBuilder"]])
+    ], RegisterComponent);
+    return RegisterComponent;
 }());
 
 
