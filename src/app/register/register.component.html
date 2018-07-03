@@ -6,7 +6,7 @@
     <div class="centered-div">
     	<h1 class="heading">Canvab</h1>
     	<div class="form">
-                <form [formGroup]= "registerform" novalidate (ngSubmit)="onSubmitDetails(registerform.value)">
+                <form [formGroup]= "registerform" novalidate (ngSubmit)="onSubmitDetails()">
                     <div class="form-group">
                         <input type="text" placeholder="Name" formControlName="name" required>
                     </div>
