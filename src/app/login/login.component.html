@@ -1,13 +1,13 @@
 <!-- <app-navbar></app-navbar> -->
 <div class="wrapper">
 <div class="container-fluid">
-	<h1 class="hstyle"><a href="#"><span class="glyphicn glyphicon glyphicon-home"><i class="fa fa-home"></i></span></a></h1>
+	<h1 class="hstyle"><a href="#"><span class="glyphicn"><i class="fa fa-home"></i></span></a></h1>
 </div>
 <div class="container-fluid con">
     <div class="centered-div">
     	<h1 class="heading">Canvab</h1>
     	<div class="form">
-         <form [formGroup]="loginform" novalidate (ngSubmit)="onSubmitLoginDetails(loginform.value)">
+          <form [formGroup]="loginform" novalidate (ngSubmit)="onSubmitLoginDetails(loginform.value)">
                       <div class="container">
                         <!-- <label for="email"><b>Email</b></label> -->
                         <!-- <input type="email" placeholder="Enter Email" name="Email" required> -->
@@ -21,7 +21,7 @@
                       <!--   <label for="psw"><b>Password</b></label> -->
                         <!-- <input type="password" placeholder="Enter Password" name="psw" required> -->
                         <div class="form-group">
-                        <input type="password" placeholder="Password" formControlName="password" required>
+                        <input type="text" placeholder="Password" formControlName="password" required>
                     	</div>
                         <div *ngFor="let validation of login_validation_messages.password">
                         <div class="error-message" *ngIf="loginform.get('password').hasError(validation.type) && (loginform.get('password').dirty || loginform.get('password').touched)" style="color: crimson;">{{validation.message}}</div>
@@ -39,7 +39,7 @@
                         </button> -->
                         <div class="form-group fs">
                          <button class="btn" button type="submit" [disabled]="!loginform.valid" *ngIf="loginform.valid">
-                            <a href="" class="banchor">Get In</a>
+                            <a href="#" class="banchor">Get In</a>
                         </button>
                     	</div>
                       <!-- <div class="container" style="background-color:#f1f1f1">
